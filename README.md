@@ -6,7 +6,7 @@ Here's what I plan to collect here:
 
 **Todo:**
 
-* A declaration for how to store and reference accessories and components
+* A full set of components (includes accessories) arranged into categories
 * A JSON file that associates every accessory ID with:
   * type ("hat") and variant ("trucker gothic milady") of accessory
   * Bonding curve parameter and/or original supply amount
