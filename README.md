@@ -2,8 +2,6 @@
 
 A place to collect various common data and documentation for the Milady OS project. The master branch of this repo should be considered the single source of truth for anything covered here, including the file structure and naming scheme of `components/`.
 
-Here's what I plan to collect here:
-
 **Done:**
 
 * `components/` contains all images needed to render any Avatar from the bottom up. The file structure is important.
