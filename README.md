@@ -1,6 +1,6 @@
 # mOS Schema
 
-A place to collect various common data and documentation for the Milady OS project. The master branch of this repo should be considered the single source of truth for anything covered here, including the file structure and naming scheme of `components/`.
+A place to collect various common data and resources for the Milady OS project. The master branch of this repo should be considered the single source of truth for anything covered here, including the file structure and naming scheme of `components/`.
 
 **Done:**
 
