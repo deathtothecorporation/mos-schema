@@ -4,7 +4,7 @@ A place to collect various common data and resources for the Milady OS project. 
 
 **Done:**
 
-* `components/` contains all images needed to render any Avatar from the bottom up. The file structure is important.
+* `components/` contains all images needed to render any Avatar from the bottom up. The file/folder structure should be preserved, as `accessory-data.json` "knows" how to find the images within that structure.
 * `original_components_per_milady.json`: probably unneeded in all of MiladyOS. This is the "completed and corrected" list of all drawable components per milady in the original MiladyMaker set. MiladyOS should never use this file, but should instead look at the following files and the current equip state of a Milady Avatar to render it.
 * `static_components.json` lists all components that are not accessories - background, skin tone, etc.
 * `accessories.json` lists all accessories - aka "dynamic components - things that can be bought and sold, and equipped/unequipped, within the Milady system.
