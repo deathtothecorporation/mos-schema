@@ -28,7 +28,7 @@ for component in components:
         staticComponents.append(component)
         continue
 
-    if componentType in ["Earrings", "Glasses", "Hat", "Necklace", "Shirt"]:
+    if componentType in ["Earring", "Glasses", "Hat", "Necklace", "Shirt"]:
         accessories.append(component)
         continue
 
@@ -43,12 +43,12 @@ for component in components:
     
     raise "unhandled component type"
 
-# write to files
+# print("static components:")
+# pprint(staticComponents)
+# print("accessories:")
+# pprint(accessories)
 
-print("static components:")
-pprint(staticComponents)
-print("accessories:")
-pprint(accessories)
+# write to files
 
 json.dump(accessories, open("./accessories.json", "w"))
 json.dump(staticComponents, open("./static_components.json", "w"))
