@@ -21,7 +21,7 @@ for accessory in accessories:
         "typeName": accessory[0],
         "variantId": id_transform.stringToHashToUint128(accessory[1]),
         "variantName": accessory[1],
-        "path": f"components/{accessory[0]}/{accessory[1]}.png",
+        "path": f"{accessory[0]}/{accessory[1]}.png",
         "soulboundSupply": 0 # we will increment this in the next loop
     }
 
