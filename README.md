@@ -18,9 +18,9 @@ A place to collect various common data and documentation for the Milady OS proje
     * `imagePath`: the path to the png image of the asset, relative to the root image folder (in this repo, components/)
     * `soulboundSupply`: How many items existed within the original Milady set
     * `bondingCurveParameter`: The bonding curve parameter that should be / is set in the `LiquidAccessories` contract for the item.
-* **TODO**: `static_components_per_milady.json`, a dictionary that defines the components that should always be drawn for a given milady - background, skin tone, etc. This can be thought of as the "genetic code" of the base doll.
 
 **Todo:**
 
 * Reference rendering script written in Python
 * A reference for offline calculation of item mint cost and burn reward.
+* `static_components_per_milady.json`, a dictionary that defines the components that should always be drawn for a given milady - background, skin tone, etc. This can be thought of as the "genetic code" of the base doll.
