@@ -1,4 +1,4 @@
-For an implementation of this algorithm, see the `renderAvatar` function in [render-avatar-scripts/src/render_avatars.py](https://github.com/deathtothecorporation/avatar-render-scripts/blob/master/src/render_avatars.py), but the underlying algorithm is so simple you probably don't even need to reference it.
+For an implementation of this algorithm, see the `renderAvatar` function in [render-avatar-scripts/src/render_avatars.py](https://github.com/deathtothecorporation/avatar-render-scripts/blob/master/src/render_avatars.py), but this is probably a better guide if you're going to start coding.
 
 # Rendering an Avatar
 
