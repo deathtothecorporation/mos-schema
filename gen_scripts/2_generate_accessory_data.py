@@ -18,8 +18,10 @@ for accessory in accessories:
     id = id_transform.typeAndVariantToId(accessory[0], accessory[1])
     accessoryData[id] = {
         "typeId": id_transform.stringToHashToUint128(accessory[0]),
+        "typeIdAsStr": str(id_transform.stringToHashToUint128(accessory[0])),
         "typeName": accessory[0],
         "variantId": id_transform.stringToHashToUint128(accessory[1]),
+        "variantIdAsStr": str(id_transform.stringToHashToUint128(accessory[1])),
         "variantName": accessory[1],
         "imagePath": f"{accessory[0]}/{accessory[1]}.png",
         "soulboundSupply": 0 # we will increment this in the next loop
