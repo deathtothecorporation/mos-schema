@@ -24,7 +24,7 @@ staticComponents = []
 
 for component in components:
     (componentType, componentVariant) = component
-    if componentType in ["Background", "Blush", "Eyebrow", "Eyes", "Hair", "Mouth", "Neck", "Race"]:
+    if componentType in ["Background", "Blush", "Eyebrow", "Eyes", "Eye Color", "Hair", "Mouth", "Neck", "Race"]:
         staticComponents.append(component)
         continue
 

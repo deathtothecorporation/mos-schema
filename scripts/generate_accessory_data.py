@@ -26,7 +26,7 @@ for accessory in accessories:
     }
 
 # load components per milady
-componentsPerMilady = json.load(open("./components_per_milady.json", "r"))
+componentsPerMilady = json.load(open("./original_components_per_milady.json", "r"))
 
 # iterate through componentsPerMilady and tally soulboundSupply for each accessory
 for components in componentsPerMilady.items():
@@ -52,11 +52,6 @@ for accessory in accessories:
 # print("accessoryData:")
 # pprint(accessoryData)
 
-for (id, accd) in accessoryData.items():
-    if accd["typeName"] == "Earrings" and accd["variantName"] == "celine dog":
-        print(id)
-        print(accd)
-
 # # load old accessory data and check against it
 # oldAccessoryData = json.load(open("./accessory-data.json", "r"))
 # for oldAccessoryData in oldAccessoryData.values():
@@ -71,7 +66,7 @@ for (id, accd) in accessoryData.items():
 #     if oldAccessoryData["bondingCurveParameter"] != accessoryData[id]["bondingCurveParameter"]:
 #         print(f"mismatch for {oldAccessoryData['type']} {oldAccessoryData['variant']}: {oldAccessoryData['bondingCurveParameter']} vs {accessoryData[id]['bondingCurveParameter']}")
 
-json.dump(accessoryData, open("./accessory-data.json", "w"))
+json.dump(accessoryData, open("./accessory_data.json", "w"))
 
 # for accessory in accessoryData.values():
 #     pprint(accessory)
