@@ -46,6 +46,9 @@ def supplyToBondingCurveParameter(supply):
 # now add bonding curve parameter
 for accessory in accessories:
     id = id_transform.typeAndVariantToId(accessory[0], accessory[1])
+    # check if supply is 0
+    if accessoryData[id]["soulboundSupply"] == 0:
+        raise Exception(f"accessory {accessory[0]} {accessory[1]} has 0 supply")
     accessoryData[id]["bondingCurveParameter"] = supplyToBondingCurveParameter(accessoryData[id]["soulboundSupply"])
 
 

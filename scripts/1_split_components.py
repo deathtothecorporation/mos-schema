@@ -24,22 +24,13 @@ staticComponents = []
 
 for component in components:
     (componentType, componentVariant) = component
-    if componentType in ["Background", "Blush", "Eyebrow", "Eyes", "Eye Color", "Hair", "Mouth", "Neck", "Race"]:
+    if componentType in ["Background", "Blush", "Eyebrow", "Eyes", "Eye Color", "Hair", "Mouth", "Neck", "Race", "Face Tattoo"]:
         staticComponents.append(component)
         continue
 
-    if componentType in ["Earring", "Glasses", "Hat", "Necklace", "Shirt"]:
+    if componentType in ["Earring", "Glasses", "Hat", "Necklace", "Shirt", "Face Piercing"]:
         accessories.append(component)
         continue
-
-    if componentType == "Face Decoration":
-        if componentVariant in ["face piercings", "nose ring gold", "nose ring silver", "snakebites"]:
-            accessories.append(component)
-            continue
-        
-        else:
-            staticComponents.append(component)
-            continue
     
     raise "unhandled component type"
 
