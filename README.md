@@ -16,7 +16,7 @@ These are likely not useful for user-facing apps and runtimes, but may be useful
 ## App Resources
 
 * `components/` contains all images needed to render any Avatar from the bottom up. The file/folder structure should be preserved, as `accessory_data.json` "knows" how to find the images within that structure. Note that this includes images for both "static components" like backgrounds and "accessories" like earrings.
-* `static_components_per_milady.json` lists the static components belonging to each Milady. This can be thought of as the "genetic code" of the base doll. Rendering of an Avatar (see below) should begin with this data.
+* `static_components_per_avatar.json` lists the static components belonging to each Milady. This can be thought of as the "genetic code" of the base doll. Rendering of an Avatar (see below) should begin with this data.
 * `accessory_data.json` associates every accessory ID with various data.
   * Info included for each item:
     * `typeName` and `variantName`, i.e. "hat" and "trucker gothic milady"

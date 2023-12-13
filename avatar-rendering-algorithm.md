@@ -4,7 +4,7 @@ For an implementation of this algorithm, see the `renderAvatar` function in [ren
 
 Here's how you render an avatar with a given `id`:
 
-1. Get the dictionary of static components for the avatar from `static_components_per_milady.json`.
+1. Get the dictionary of static components for the avatar from `static_components_per_avatar.json`.
 2. Replace the "Eyes" and "Eye Color" entries with a single combined "Eyes" entry, where its value is formed by joining the eye type string to the color string with an underscore. For example, the `"Eyes": "teary"` and `"Eye Color": "blue"` entries should be removed, and replaced with an `"Eyes", "teary_blue"` entry.
 3. Get an updated list of equipped accessories from the avatar. [render-avatar-scripts/src/update_equip_status.py](https://github.com/deathtothecorporation/avatar-render-scripts/blob/master/src/update_equip_status.py) does this and saves the result in `data/equip_state.json`.
    * `equip_state.json` expresses the list of accessories by their `accessoryId`. Convert these to `accessoryType: accessoryVariant` associations by looking up these values in the `accessory_data.json` object.
